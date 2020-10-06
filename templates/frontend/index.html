@@ -1,14 +1,126 @@
 {% extends 'frontend/base.html' %}
 {% block title %} Kevin homepage {% endblock %}
 {% block content %}
-<div class="jumbotron">
-  <h1 class="display-3">Welcome To My Homepage</h1>
-  <p class="lead">My name is Kevin</p>
-  <hr class="my-2">
-  <p>More info</p>
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
-  </p>
+<!DOCTYPE html>
+<html>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey">
+
+<!-- w3-content defines a container for fixed size centered content,
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1400px">
+
+<!-- Header -->
+<header class="w3-container w3-center w3-padding-32">
+  <h1><b>MY BLOG</b></h1>
+  <p>Welcome to the blog of <span class="w3-tag">Kevin</span></p>
+</header>
+
+<!-- Grid -->
+<div class="w3-row">
+
+<!-- Blog entries -->
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="https://www.bosshunting.com.au/wp-content/uploads/2020/03/sergio-alvarez-1-1027x476.jpg" alt="Cars" style="width:100%">
+    <div class="w3-container">
+
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>LIKE</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b> </b> <span class="w3-tag">999 Likes</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+  <img src="https://www.torquethailand.com/wp-content/uploads/2018/11/Lamborghini-Aventador_SVJ-2019-1024-29.jpg" alt="SVJ" style="width:100%">
+    <div class="w3-container">
+      <h3><b>Lambogrhini Aventador SVJ</b></h3>
+      <h5>My favorite cars <span class="w3-opacity"></span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>Lamborghini created the Aventador SVJ to embrace challenges head-on, combining cutting-edge technology with
+          extraordinary design, while always refusing to compromise. In a future driven by technology, it’s easy to lose the genuine thrill of
+            driving. But in the future shaped by Lamborghini, this won’t be left behind, because there will always be a driver behind the wheel. </p>
+      <div class="w3-row">
+        <div class="w3-col m8 s12">
+          <p><button class="w3-button w3-padding-large w3-white w3-border"><b>LIKE</b></button></p>
+        </div>
+        <div class="w3-col m4 w3-hide-small">
+          <p><span class="w3-padding-large w3-right"><b></b> <span class="w3-tag">999 LIKES</span></span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- END BLOG ENTRIES -->
 </div>
+
+<!-- Introduction menu -->
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card w3-margin w3-margin-top">
+  <img src="https://www.img.in.th/images/cf84f407670876c43ef2c007f6d2d556.jpg" style="width:100%">
+    <div class="w3-container w3-white">
+      <h4><b>Kevin</b></h4>
+      <p>Just me, myself and I </p>
+    </div>
+  </div><hr>
+
+  <!-- Posts -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Other Interested</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+      <li class="w3-padding-16">
+        <img src="https://img.rodmuesong.com/rod1810/resize/480x360/2019/08/22/20190822214645-ab24.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Nissan Fairlady 370z</span><br>
+        <span></span>
+      </li>
+      <li class="w3-padding-16">
+        <img src="https://i.pinimg.com/originals/ba/68/02/ba680222020857b9b5e69f7a0c4b516e.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Volkswagen scirocco</span><br>
+        <span></span>
+      </li>
+      <li class="w3-padding-16">
+        <img src="https://d2qak6y1qy86f6.cloudfront.net/medium/gallery/exterior/2/16/audi-tt-front-angle-low-view-300100.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Audi TT</span><br>
+        <span></span>
+      </li>
+    </ul>
+  </div>
+  <hr>
+
+
+
+<!-- END Introduction Menu -->
+</div>
+
+<!-- END GRID -->
+</div><br>
+
+<!-- END w3-content -->
+</div>
+
+<!-- Footer -->
+
+
+</body>
+</html>
 
 {% endblock %}
