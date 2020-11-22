@@ -12,7 +12,7 @@
 </head>
 <body>
   <nav class="navbar navbar-expand-md navbar-light bg-light">
-    <a class="navbar-brand" href="#">KEVIN</a>
+    <a class="navbar-brand" href="">KEVIN</a>
     <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
         aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -26,14 +26,23 @@
           <a class="nav-link" href="{% url 'about' %}">About <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="{% url 'contact' %}">Contact <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="{% url 'contact' %}"> Contact <span class="sr-only">(current)</span></a>
         </li>
 
+        <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Reference
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="{% url 'reference' %}">Transcript</a>
+    <a class="dropdown-item" href="{% url 'toeic' %}">TOEIC Score</a>
+    <a class="dropdown-item" href="{% url 'cert' %}">Certificate</a>
+
+  </div>
+</div>
+
       </ul>
-      <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form>
+
     </div>
   </nav>
   {% block content %}
